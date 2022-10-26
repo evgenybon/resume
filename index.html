@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--lang=ru, контент на русском-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,13 +13,15 @@
     <section>
 
         <h1>Борчин Евгений Михайлович</h1>
-        
+
+<!--        в текущем варианте это dl dt dd теги-->
         <div class="contacts">
             <div class="contact">
                 <div class="contact__type">
                     Telegram
                 </div>
                 <div class="contact__value">
+<!--                    внешние ссылки открываются во внешнем окне, через target=_blank-->
                 <a href="https://t.me/john12x">t.me/john12x</a>
                 </div>
             </div>
@@ -29,13 +32,32 @@
                 <div class="contact__value">
                 <a href="https://mailto:bb.evg@outlook.com">bb.evg@outlook.com</a>
                 </div>
-            </div>    
+            </div>
         </div>
 
-  <img src="/resume/image.jpg" height="300px" align="right">
+<!--        битая ссылка на картинку-->
+<!--        align устарело, любая стилизация, в том числе позиционирование делается при помощи css стилей-->
+<!--        картинки изначально подготавливают к использованию, она уже могла быть сжата до 300px в высоту и меньше весить в браузере пользователя-->
+<!--  <img src="/resume/image.jpg" height="300px" align="right">-->
+  <img src="image.jpg" height="300px" align="right">
 
   <div class="experience">
+     <!-- с точки зрения семантики это должно быть dl dt dd список,
+      ну или по крайней мере div можно было использовать, при этом не отделять
+      записи семантически между собой, т.е к примеру
+
+      <div>
+          <div>Текущий курс обучения</div>
+          <div>Не прохожу</div>
+      </div>
+
+      <div>
+          <div>Стаж и место работы</div>
+          <div>В сфере IT не имеется</div>
+      </div>-->
+
         <div class="experience__q">
+<!--            это всё не является параграфами, параграфы для статей-->
             <p>Текущий курс обучения</p>
             <p>Стаж и место работы</p>
             <p>Опыт программирования</p>
@@ -49,10 +71,11 @@
             <p>Отсутствует</p>
             <p>А2</p>
             <p>Приобретение навыков программирования</p>
-            <p>Oт друзей</p> 
+            <p>Oт друзей</p>
+            <!--      здесь и ниже далее пригает форматирование, в IDE есть автоформатирование текста, без этого сложно читать-->
           </div>
   </div>
-        </section>  
+        </section>
   </div>
 </body>
 </html>
