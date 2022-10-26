@@ -1,0 +1,39 @@
+html {
+  font-family: Helvetica, sans-serif;
+  --primary-color: #2f80ed;
+  --secondary-color: #333333;
+  --background-color: #d2dff0;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.contact {
+  display: flex;
+  font-size: small;
+}
+
+.contact__type {
+  min-width: 90px;
+}
+
+.experience {
+  display: flex;
+}
+
+.experience__q {
+  color: var(--primary-color);
+  max-width: 350px;
+  margin: 0 15px;
+  margin-top: 50px;
+  text-decoration: underline;
+  background-color: var(--background-color);
+}
+
+.experience__a {
+  min-width: 100px;
+  margin-top: 50px;
+}/*# sourceMappingURL=main.css.map */
